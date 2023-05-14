@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>Dashbord</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- HEADER  -->
+    <header>
+        <div class="container-fluid fixed">
+            <div class="row p-3 align-itess-center background-white ">
+                <div class="col-2 col-lg-1 align-items-center d-flex">
+                    <div class="img-container-logo d-none d-lg-block">
+                        <img src="./img/logo.svg" >
+                    </div>
+                    <div class="img-container-logo-phone d-lg-none">
+                        <img src="./img/mobile-logo.png" >
+                    </div>
+                </div>
+                <div class="col-8 col-lg-10">
+                    <!-- SEARCH -->
+                    <div class="search-bar mx-5">
+                        <i class="fa-solid fa-magnifying-glass"></i> 
+                        <input class="form-control search" list="datalistOptions" id="exampleDataList" placeholder="Prova a cercare: Lezioni di Laravels">
+                        <datalist id="datalistOptions">
+                            <option value="San Francisco">
+                            <option value="New York">
+                            <option value="Seattle">
+                            <option value="Los Angeles">
+                            <option value="Chicago">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="col-2 col-lg-1 d-none d-lg-block">
+                    <div class="header-navi d-flex justify-content-end">
+                        <a href="#" class="m-2"><i class="fa-solid fa-list grey"></i></a>
+                        <a href="#" class="m-2"><i class="fa-solid fa-circle-question grey"></i></a>
+                        <a href="#" class="m-2"><i class="fa-solid fa-ellipsis-vertical grey"></i></a>
+                        <div class="dropdown">
+                            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Profilo</a></li>
+                              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                              <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-2  justify-content-end d-lg-none align-items-center d-flex">
+                    <div class="dropdown">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell"></i></button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <!--NAVI BAR -->
+        <div class="side-bar-section side-bar-fixed img-bckgrnd d-lg-block">
+            <div class="row-navi height padding d-flex flex-column justify-content-between">
+                <div class="col-12-navi">
+                    <div class="head-navi fs-5 white p-4 mx-1">
+                        <div class="navi-stats">
+                            <div class="navi-choice d-flex align-items-center mb-2 p-1">
+                                <i class="fa-solid fa-house"></i>
+                                <a class="mx-4 white text-decoration-none" href="#">Home</a>
+                            </div>
+                            <div class="navi-choice d-flex align-items-center mb-2 p-1">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <a class="mx-4 white text-decoration-none" href="#">Status</a>
+                            </div>
+                            <div class="navi-choice d-flex align-items-center mb-2  p-1">
+                                <i class="fa-solid fa-signal"></i>
+                                <a class="mx-4 white text-decoration-none" href="#">Signals</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12-navi">
+                    <div class="bottom-navi fs-5 white p-4 mx-1">
+                        <div class="navi-choice d-flex align-items-center mb-2  p-1">
+                            <i class="fa-solid fa-gear"></i>
+                            <a class="mx-4 white text-decoration-none" href="#">Admin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MOBILE NAVI -->
+        <div class="side-bar-section-phone side-bar-fixed img-bckgrnd d-lg-none">
+            <div class="row-navi height padding d-flex flex-column justify-content-between">
+                <div class="col-12-navi">
+                    <div class="head-navi fs-5 white p-4 mx-1">
+                        <div class="navi-stats">
+                            <div class="navi-choice d-flex align-items-center mb-2 p-1">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <div class="navi-choice d-flex align-items-center mb-2 p-1">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </div>
+                            <div class="navi-choice d-flex align-items-center mb-2  p-1">
+                                <i class="fa-solid fa-signal"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12-navi">
+                    <div class="bottom-navi fs-5 white p-4 mx-1">
+                        <div class="navi-choice d-flex align-items-center mb-2  p-1">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ <!-- CONTENT  DASHBOARD-->
+ <div class="main-section padding widht-percetnt margin-desktop margin-l">
+    <!-- BLUE PART -->
+    <div class="container-fluid blu">
+        <div class="row white py-4">
+            <div class="col-12 col-sm-4 my-4">
+                <div class="title-dash">
+                    <h1 class="d-inline-block fw-semibold">Boolean</h1>
+                    <span class="badge rounded-pill badge-color">Piano blaze</span>
+                </div>
+                <div class="bread-crumbs d-lg-none">
+                    <span class="badge rounded-pill badge-color">3 app</span>
+                    <i class="fa-solid fa-angles-right"></i>
+                    <span class="badge rounded-pill badge-color">+</span>
+                </div>
+                <div class="bread-crumbs d-none d-lg-block">
+                    <span class="badge rounded-pill badge-color">3 app</span>
+                    <i class="fa-solid fa-angles-right"></i>
+                    <span class="badge rounded-pill badge-color">Boolean mobile app</span>
+                    <span class="badge rounded-pill badge-color">Boolean web app</span>
+                    <span class="badge rounded-pill badge-color">Boolean blog app</span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 my-4">
+                <div class="online-student">
+                    <h5 class="fw-semibold">Studenti online negli ultimi 30 minuti</h5>
+                    <h3 class="fw-semibold">125</h3>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 my-4 order-first order-sm-last">
+                <div class="new-student d-flex align-items-center">
+                    <p class="fw-semibold my-1">Nuovo Studente</p>
+                    
+                    <button class="btn add white mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <span class="fs-2 plus white text-decoration-none">+</span>
+                    </button>
+                    <div class="offcanvas w-50 offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                            <form class="row g-3 needs-validation" novalidate="">
+                                <div class="col-md-6">
+                                    <label for="validationCustom01" class="form-label">First name</label>
+                                    <input type="text" class="form-control" id="validationCustom01" value="" required="">
+                                    <div class="valid-feedback">Looks good!</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="validationCustom02" class="form-label">Last name</label>
+                                    <input type="text" class="form-control" id="validationCustom02" value="" required="">
+                                    <div class="valid-feedback">Looks good!</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="validationCustomUsername" class="form-label">Email</label>
+                                    <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required="">
+                                    <div class="invalid-feedback">Please choose a username.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputPassword5" class="form-label">Password</label>
+                                    <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+                                    <div id="passwordHelpBlock" class="form-text">
+                                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="validationCustom01" class="form-label">Indirizzo</label>
+                                    <input type="text" class="form-control" id="validationCustom03" value="" required="">
+                                    <div class="valid-feedback">Looks good!</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="validationCustom03" class="form-label">Citta</label>
+                                    <input type="text" class="form-control" id="validationCustom04" required="">
+                                    <div class="invalid-feedback">Please provide a valid city.</div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="validationCustom04" class="form-label">Stato</label>
+                                    <select class="form-select" id="validationCustom05" required="">
+                                        <option selected="" disabled="" value="">Scegli...</option>
+                                        <option>...</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select a valid state.</div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="validationCustom05" class="form-label">CAP</label>
+                                    <input type="text" class="form-control" id="validationCustom06" required="">
+                                    <div class="invalid-feedback">Please provide a valid zip.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="formFile" class="form-label">Foto</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
+                                        <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+                                        <div class="invalid-feedback">You must agree before submitting.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Salva</button>
+                                <button type="button" class="btn btn-warning">Svuota</button>
+                                </div>
+                            </form>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  

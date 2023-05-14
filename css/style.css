@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.blu{
+    background-color: #1B72E8;
+}
+
+.white{
+    color: #fff;
+}
+
+.background-white{
+    background-color: #fff;
+    
+}
+.grey{
+    color: #595656;
+}
+
+.td-color{
+    color: #6C757D;
+    border: 1px solid #6C757D;
+    border-radius: 8px;
+    height: 30px;
+    width: 30px;
+    padding-left: 6px;
+}
+
+.main-color{
+    background-color: #F8F9FA;
+}
+
+.list-bckgrnd{
+    background-color: #F7F7F7;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.side-bar-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.fixed-height{
+    height: 78px;
+}
+
+.padding{
+    padding-top: 78px;
+}
+
+.side-bar-section{
+    width: 180px;
+    display: none;
+}
+
+.side-bar-section-phoe{
+    width: 70px;
+}
+
+.height{
+    height: calc(100vh - 20px);
+}
+
+
+.widht-percetnt{
+    width: calc(100% - 87px);
+}
+
+.margin-l{
+    margin-left: 87px;
+}
+
+
+.badge-color{
+    background-color: #175bbb;
+}
+
+.code-img{
+    background-color: #f56552;
+    color: #fff;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+/*HEADER */
+.search-bar{
+    position: relative;
+}
+
+.fa-magnifying-glass{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.search{
+    background-color: #e2e1e1;
+    padding: 10px 40px;
+}
+
+.fa-magnifying-glass{
+    position: absolute;
+}
+
+.fa-bell{
+    color: #fa8f04;
+}
+
+
+.img-container-logo-phone{
+    width: 100%;
+
+    
+}
+
+.img-container-logo-phone > img{
+    width: 80%;
+    
+}
+
+
+
+
+
+
+
+/*MAIN NAVI*/
+
+.img-bckgrnd{
+    background-image: url(../img/sidebar-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #041b2f;
+}
+
+.navi-choice:hover{
+    background-color: #c8c5c5;
+}
+
+.accordion-button:hover , tr:hover{
+    background-color: #d6d2d2;
+}
+
+
+
+
+
+/*  CONTENT DASHBOARD */
+
+
+
+/* BLUE PART */
+
+
+
+.add{
+    border-radius: 8px;
+    border: 1px solid #fff;
+    height: 40px;
+    width: 40px;
+    position: relative;
+}
+
+.plus{
+    position: absolute;
+    bottom: 1px;
+    right: 9px;
+}
+
