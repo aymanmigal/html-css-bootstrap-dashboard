@@ -212,3 +212,42 @@ ul li{
     width: 100%;
 }
 
+
+
+
+/* MEDIA QUERY BREAKPOINTS */
+
+
+@media screen and (max-width: 768px) {
+    .hide-td{
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .img-container-logo-phone {
+        width: 50%;
+    }
+
+    .img-container-class {
+        width: 35%;
+    }
+    
+}
+
+@media screen and (min-width: 991px) {
+
+    .margin-desktop{
+        margin-left: 180px;
+        width: auto;
+    }
+
+    .img-container-logo-phone {
+        width: 40%;
+    }
+
+}
+
+
