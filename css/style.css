@@ -1,3 +1,6 @@
+/* GENERAL UTILITIES */
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -33,7 +36,7 @@
     background-color: #F8F9FA;
 }
 
-.list-bckgrnd{
+.list{
     background-color: #F7F7F7;
 }
 
@@ -188,5 +191,24 @@ ul li{
     position: absolute;
     bottom: 1px;
     right: 9px;
+}
+
+/* MAIN PART */
+
+.img-container-class{
+    width: 100%;
+    display: inline-block;
+}
+
+.img-container-class > img{
+    width: 15%;
+}
+
+.img-container{
+    width: 100%;
+}
+
+.img-container > img{
+    width: 100%;
 }
 
